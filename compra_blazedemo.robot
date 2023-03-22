@@ -74,6 +74,7 @@ Entao exibe a mansagem de obrigado
     element should contain              xpath = //h1                    Thank you for your purchase today!
 
 E o valor como "${preco}"
+    #element should contain              css = tr:nth-child(3) > tr:nth-child(2)      ${preco}
     element should contain              xpath = //tbody/tr[3]/td[2]     ${preco}
 
 
